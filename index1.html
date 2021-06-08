@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+		<address><h1>Name:-Sahil Srivastava</h1>
+			<h1>Reg No:-20BCE10417</h1></address>
+	</header>
+	<script type="text/javascript">
+		function guessnumber()
+		{
+			const random=Math.floor(Math.random()*10)+1;
+			let number=parseInt(prompt('GUESS A NUMBER FROM 1 T0 10'));
+			while(number!==random)
+			{
+				number=parseInt(prompt('GUESS A NUMBER FROM 1 TO 10'));
+			}
+			if(number==random)
+			{
+				alert('YOU guessed the correct number!!');
+			}
+		}
+	</script>
+	<center>
+	<h1 class="thank">THANK YOU FOR SUBMITTING THE FORM !!!</h1>
+	<div class="game">
+	<h3>GUESS THE NUMBER GAME</h3>
+	<p>GUESS A NUMBER FROM 1 TO 10 AND CHECK WHETHER YOUR ANSWER IS WRITE OR WRONG</p>
+<button onclick="guessnumber()" class="function" title="Click To Play">PLAY</button>
+</div>
+</center>
+</body>
+</html>

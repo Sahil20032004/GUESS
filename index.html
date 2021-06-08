@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>GUESS THE NUMBER</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<script type="text/javascript">
+		function guessnumber()
+		{
+			const random=Math.floor(Math.random()*10)+1;
+			let number=parseInt(prompt('GUESS A NUMBER FROM 1 T0 10'));
+			while(number!==random)
+			{
+				number=parseInt(prompt('GUESS A NUMBER FROM 1 TO 10'));
+			}
+			if(number==random)
+			{
+				alert('YOU guessed the correct number!!');
+			}
+		}
+	</script>
+	<header>
+		<address><h1>Name:-Sahil Srivastava</h1>
+			<h1>Reg No:-20BCE10417</h1></address>
+	</header>
+<center>
+	<form autocomplete="on" name="INFORMATION" method="post" action="index1.html">
+		<label>FIRST NAME:-</label>
+		<input type="text" name="fname" autofocus="" required="" placeholder="First Name"><br><br>
+		<label>LAST NAME:-</label>
+		<input type="text" name="lname" required="" placeholder="Last Name"><br><br>
+		<label class="dob">DOB:-</label>
+		<input type="date" name="date of birth" required=""><br><br>
+		<label class="email">EMAIL ID:-</label>
+		<input type="email" name="email id" required="" placeholder="Email ID" size="24"><br><br>
+		<label class="contact">CONTACT NO:-</label>
+		<input type="tel" name="contact" required="" placeholder="Contact No"><br><br>
+		<label class="state">STATE:-</label>
+		<select class="state">
+			<option>JAMMU and KASHMIR</option>
+			<option>Andhra Pradesh</option>
+			<option>Arunachal Pradesh</option>
+			<option>Assam</option>
+			<option>Bihar</option>
+			<option>Chhattisgarh</option>
+			<option>Goa</option>
+			<option>Gujarat</option>
+			<option>Haryana</option>
+			<option>Himanchal Pradesh</option>
+			<option>Jharkhand</option>
+			<option>Karnataka</option>
+			<option>Kerala</option>
+			<option>Madhya Pradesh</option>
+			<option selected="">Maharashtra</option>
+		    <option>Manipur</option>
+		    <option>Meghalaya</option>
+		    <option>Mizoram</option>
+		    <option>Nagaland</option>
+		    <option>Odisha</option>
+		    <option>Punjab</option>
+		    <option>Rjasthan</option>
+		    <option>Sikkim</option>
+		    <option>Tamil Nadu</option>
+		    <option>Telangana</option>
+		    <option>Tripura</option>
+		    <option>Uttar Pradesh</option>
+		    <option>Uttarakhand</option>
+		    <option>West Bengal</option>
+		</select><br><br>
+		<label>PASSWORD:-</label>
+		<input type="password" name="password" required="" placeholder="Password"><br><br>
+		<button type="submit" name="submit" accesskey="s" title="alt+s" onclick="alert('YOU HAVE SUBMITTED THE FORM')">SUBMIT</button>
+		<button type="reset" name="reset" accesskey="r" title="alt+r">RESET</button>
+</form><br><br>
+<div>
+	<h3>GUESS THE NUMBER GAME</h3>
+	<p>GUESS A NUMBER FROM 1 TO 10 AND CHECK WHETHER YOUR ANSWER IS WRITE OR WRONG</p>
+<button onclick="guessnumber()" class="function" title="Click To Play">PLAY</button>
+</div>
+</center>
+</body>
+</html>
